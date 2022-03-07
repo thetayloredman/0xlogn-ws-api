@@ -44,9 +44,9 @@ This is what a client should ALWAYS expect from the server.
     "response": {
         "seq": 1, // same sequencing number as the request
         "data": {
-            "ok": true,
-            "error": null,
-            "data": {}
+            "ok": true, // did the request go through okay?
+            "error": null, // a string for an error
+            "data": {/* anything */}
         }
     }
 }
